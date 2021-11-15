@@ -1,6 +1,15 @@
-# Invertible and Pseudo-Invertible Encoders
+# Invertible and Pseudo-Invertible Encoders: An Approach to Inverse Problems with Neural Networks
 
- While neural networks have been demonstrated to be highly successful in mathematical and statistical modelling of a comprehensive selection of problems, their application to inverse problems is not without complications. Recent works have shown that neural networks are especially prone to stability issues -- both in a classical sense, and in the context of so called adverserial attacks which has come to be regarded as the most pervasive source of instability in modern neural network models.
+This is the GitHub depository for my Master Thesis in Data Science with special focus on Statistics and Machine Learning at the University of Oslo, Autumn 2021.
+
+The repository includes code and notebooks for reproducing the result we report in the thesis. We note that the seeding of the random number generators can vary in different environments.
+
+*Note that some of the computations are computationally heavy, in particular the Jacobian computations from the first experiments. We stress that running these requires a lot of available memory.*
+
+
+### Abstract
+
+While neural networks have been demonstrated to be highly successful in mathematical and statistical modelling of a comprehensive selection of problems, their application to inverse problems is not without complications. Recent works have shown that neural networks are especially prone to stability issues -- both in a classical sense, and in the context of so called adverserial attacks which has come to be regarded as the most pervasive source of instability in modern neural network models.
 
 Concomitantly, methods of constructing invertible neural networks with diffeomorphic layer structures with normalizing flows have been proposed as an interesting method for approaching inverse problems by probabilistic augmentation of latent variable models to induce full-rank in a conditional setting. However, these models can often be prohibitively expensive in terms of computational efficiency and memory usage while displaying sufficiently different architectures as to not be trivially extendable to tools for commonly defined feed-forward neural networks.
 
